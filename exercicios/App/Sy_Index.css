@@ -1,0 +1,179 @@
+@charset "UTF-8";
+:root{
+    --borda: 1px solid black; 
+    
+}
+
+body {
+    background-attachment: fixed;
+    background-image: linear-gradient(to bottom,#6D9DF5,#b0c4e6, #D1DCF0, #dbe0e9 );
+    max-width: 600px;
+    /* min-width: 150px; */
+    margin: auto;
+    padding: 2px;
+  
+}
+
+article>#centro {
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    display: flex;
+}
+.topo {
+    
+    width: 50vw;
+    height: 50px;   
+}
+.BotMen {
+    background: none;
+}
+#ImgLogin, #ImgMenu {
+    border: none;
+    cursor: pointer;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 1);
+    border-radius: 30px;
+    width: 100%;
+    object-fit: cover;
+}
+
+#dic{
+    border-radius:20px;
+    background-color:white;
+    margin:20px 5px 25px 5px;
+}
+
+#dic div:nth-child(2) {
+    overflow: auto;
+    word-break:break-word;
+    padding-left:7px;
+    padding-right:7px;
+
+    
+}
+#dic>div> p{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    letter-spacing: 0.5px;
+    text-indent:10px;
+    text-align: justify;
+}
+
+#dic > div > img {
+    width: 150%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 20px 0px 0px 20px;
+   
+}
+
+
+#centro, #dic {
+    display: flex;
+}
+
+#Fcentro {
+ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#centro {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 180px;
+    width: 300px;
+}
+#centro img{
+    display: block;
+    width: 100%;
+   
+}
+#status{
+    height: 50vh;
+}
+
+#CentCent{
+    padding:20px;
+}
+
+#leftSup {
+    position: absolute;
+    top: -15px;
+    left: 20px;
+    width: 60px;
+    height: 60px;
+}
+
+#LeftInf {
+    position: absolute;
+    top: 150px;
+    left: -10px;
+    width: 60px;
+    height: 60px;
+}
+#CentRigth {
+    position: absolute;
+    top: -15px;
+    left: 230px;
+    width: 60px;
+    height: 60px;
+}
+
+#DataStatus {
+    border: 1px solid black;
+    border-radius: 20px;
+    max-width: 600px;
+    justify-content: center;
+    background-color: white;
+    border-color:orange;
+    margin-top: 30px;
+}
+
+ol {
+    padding: 5px;
+}
+
+li {
+    list-style: none;
+}
+
+.linhaTitle {
+    font-weight: 900;
+    background-color: #B0C4E6;
+    padding-bottom:5px;
+    padding-top:5px;
+    
+}
+
+.linhaserv {
+    display: flex;
+}
+
+.ServMoti {
+    width: 400px;
+}
+
+.Serv {
+    font-weight: 900;
+}
+
+.Check {
+    transform: scale(2);
+}
+
+.ConfServ {
+    margin: 10px;
+}
+
+.Crit, .Prev{
+    margin:auto 7px auto 7px;
+}

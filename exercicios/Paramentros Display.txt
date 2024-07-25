@@ -1,0 +1,16 @@
+Display:    
+
+-block
+-inline
+-inline-block
+-inline flow-root
+-none
+-flex
+-inline-flex
+-inline flex
+-grid
+-inline-grid
+-inline grid
+-table
+-block table
+-list-item

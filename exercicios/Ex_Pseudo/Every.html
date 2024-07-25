@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo</title>
+<Style>
+ a {
+  color: rgb(0, 0, 0);
+ }   
+:visited  {
+    color: rgb(173, 173, 173);
+}
+a:focus{
+    color: blue;
+}
+
+.Dov{
+    display: none;
+}
+
+#Dov:target >.Sum2{
+    display: block;
+
+}
+
+p:target::before {
+  content: "nova leitura";
+  color: limegreen;
+
+}
+
+a:focus{
+    color: blue;
+}
+.Sum2{
+    display: none;
+}
+.Sum{
+    display: none;
+}
+Div:hover >.Sum{
+    display: block;
+}
+
+
+
+</Style>
+</head>
+<body>
+    <h1>Site para visitas</h1>
+   <hr>
+<div>
+Menu
+<div id="Dov">
+    <ul>
+        <li><p><a href="#P5">Teste1</a></p></li>
+        <li><p><a href="#P6" >Yotube</a></p></li>
+        <li><a href="#P9">Texto 3</a></li>
+    </ul>
+    <div class="Sum2">
+        
+        <P id="P45" class="sumiu">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque totam iste vitae harum, vel laudantium soluta qui enim consequatur repudiandae fuga, aut dolore necessitatibus quia, corporis labore. Facilis, magnam nihil?</P>
+        <p id="P19" class="sumiu">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quas id quidem odit, praesentium reprehenderit sequi quod magni eius qui ut sint, asperiores eveniet perferendis deserunt nostrum ad repellat ducimus.</p>
+    </div>
+</div>
+</div>
+<div >
+<a href="#p12">TEXTO</a>
+<p class="Sum">Some texto</p>
+</div>
+<div >
+
+</div>
+
+</body>
+</html>

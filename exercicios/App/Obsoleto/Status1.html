@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Status</title>
+<link rel="stylesheet" href="style.css">
+<style></style>
+</head>
+<header >
+<!--Menu-->
+<table class="menu" style="background-color: #f2f2f2;">
+    <tr class="TT">
+        <th class="TT">
+            <Nav>
+                <ol>
+                    <li class="emenda">Serviços</li>
+                    <li class="emenda">Luzes</li>
+                    <li class="emenda">Calendário</li>
+                    <li class="emenda"><a href="index.html">Sair</a></li>
+                </ol> 
+                </Nav>
+        </th>
+        <td class="TT">
+            <img style="width: 50px;" src="imagens/User.png" alt="" >
+        </td>
+    </tr>
+</table>
+</header>
+<body>
+
+<!--Status-->
+<table>
+<tr>
+<td><button class="A" style="background-color: red;color: white;" onclick="openPopup()">Admissão<br> Injeção</button></td>
+<td rowspan="3">
+<picture class="Device">
+    <source media="(max-height:400px)" srcset="imagens\mycarS8.jpg" type="image/png">
+    <source media="(max-width:360px)" srcset="imagens\mycarS8.jpg" type="image/png">
+    <source media="(max-width:390px)" 	srcset="imagen's\mycar12Pro.jpg" type="image/png">
+    <img class="car" src="imagens\mycar2.jpg">
+</picture>
+</td>
+<td><button class="R" style="background-color: red;color: white;">Revisão<br>standend</button></td>
+</tr>
+<tr>
+<td><button class="T" style="background-color: red;color: white;">Travões<br>suspenção</button></td>
+<td><button class="D" style="background-color: rgb(0, 255, 85);">Distribuição<br>Transmissão</button></td>
+</tr>
+</table>
+
+<!-- Estrutura do Pop-up -->
+<div id="overlay"></div>
+<div id="popup">
+
+    <table class="tabSt">
+        <tr><th colspan="3">Admissão & Injeção</th></tr>
+        <tr><th>Serviço</th><th>motivo</th><th></th></tr>
+        <tr><td>Filtro de habitáculo</td><td>Serviço Não Registrado</td><td>Substituição</td></tr>
+        <tr><td>Calibração pneus</td><td>data limite excedida</td><td>Inspeção</td></tr>
+    </table>
+    <button onclick="closePopup()">Fechar</button>
+</div>
+
+<!--Script pop up-->
+<script>
+    function openPopup() {
+        document.getElementById("popup").style.display = "block";
+        document.getElementById("overlay").style.display = "block";
+    }
+
+    function closePopup() {
+        document.getElementById("popup").style.display = "none";
+        document.getElementById("overlay").style.display = "none";
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Status</title>
+    <style>
+      /*Menu*/
+      ol{margin-left: auto; margin-right: auto; width: 425px;}
+      .emenda {display: inline-block; } 
+      .emendas ol {display: block;margin: auto;position: relative;color:#3c4043;font-size: 20px;} 
+      .emendas li {padding: 10px;}
+      .emenda:hover{color: rgb(25, 34, 155);text-decoration: underline}
+      /*Img central*/
+      .carcenter  {display: block;margin: auto;}
+      /*Sistemas status*/
+      table.t{margin-left: auto; margin-right: auto; width: 425px; text-align: center;}
+      .t p:hover{ text-decoration: underline;}
+      .Sta{background-color:red;border-radius: 8px;padding: 2px;}
+      .Sta:hover{background-color:white;transition: 0.9s;}
+      .Sta p:hover{color: black;}
+    
+     </style>
+    
+</head>
+<header><br>
+    <nav class="emendas">
+       <ol>
+        <li class="emenda">Serviços</li>
+        <li class="emenda">Luzes</li>
+        <li class="emenda">Calendário</li>
+        <li class="emenda"><a href="file:///C:/Users/Denis/Documents/Aula%20programação/Front-end/html-css/exercicios/ex002/index.html">Sair</a></li>
+       </ol> 
+    </nav>
+</header>
+<body>
+  <table class="t">
+    <tbody>
+      <tr>
+      <td ><p class="Sta" style="margin: -40px 0px 0px 50px; position: absolute; color: #3c4043;"><b><abbr title="Sistema de admissáo de combustivel, bomba e injetores">Admissão</abbr> /<br>Injeção </p></td>
+        <td rowspan="3">
+        <picture>
+          <source media="max-width=300px" srcset="imagens/mycarPeq.jpg" type="imagens/">
+          <img class="carcenter" src="imagens/mycar2.jpg" alt="">
+        </picture>
+        </td>
+      <td><p class="StR" style="color: #3c4043; margin: -30px 0px 0px -65px; position: absolute; "><b><abbr title="Revisões básicas e obrigatórias">Revisão <br> standend</abbr></p>
+      <img style="margin: -50px 0px 0px -130px; position: absolute;" class="corR" src="imagens/statusVermelho65.png" alt=""></td>
+      </tr>
+      <tr>
+      <td><img style=" margin: -20px 0px 0px 75px; position: absolute;" src="imagens/statusVermelho65.png" alt="" >
+      <p class="StT" style="color: #3c4043; margin: -10px 0px 0px 10px; position: absolute;"><code><b>Travões <br>suspensão</code></p></td>
+      <td><img style="margin: -20px 0px 0px -130px; position: absolute;" class="corD" src="imagens/statusVerde.png" alt=""> 
+      <p class="StD" style="margin: -7px 0px 0px -65px; position: absolute; color: #3c4043;"><b>Distribuição <br>transmissao</p></td>
+      </tr>
+    </tbody>
+  </table>
+  
+</body>
+</html>

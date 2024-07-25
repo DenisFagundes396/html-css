@@ -1,0 +1,216 @@
+@charset "UTF-8";
+*{
+    height: 1.0;
+} 
+
+
+body{
+    background-attachment: fixed;
+    background-image:linear-gradient(to bottom,#5073b3,#b0c4e6, #D1DCF0, #dbe0e9 ); 
+    
+}
+/* Menu */
+#ImgLogin{
+    position: relative;
+    margin: 0px 0px 0px 30px;
+}
+.BotMen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+.Cabeça{
+    display: flex;
+    align-content: space-between;
+    justify-content: center;
+    width: 97vw;
+}
+#Marca{
+    width: 70vw;
+}
+.BotMen:Focus{
+    background: #36373250;
+}
+#Menu:hover > Div{
+    display: block;
+    position: absolute;
+
+    border-color:2px solid white;
+    height: 10px;
+    width: 20px;
+    background-color: #5073b3;
+    border-color:2px solid white;
+    height: 10px;
+    width: 20px;
+}
+
+header, h1{
+    color: white;
+    text-align: center;
+    font-size:1.20em ;
+    font-family: Segoe UI;
+    }
+/* Secção dicas */
+#TitDic{
+    font-weight: 650;
+    font-size: 1em;
+}
+.Dicas{
+   font: normal normal 1em Helvetica Neue;
+    text-align:justify;
+    text-indent: 10px;
+    color: #1D2228;   
+}
+#FotDic{
+    width:69vw;
+    background-image: linear-gradient(
+        to bottom, #ffffff50, #5073B399),   url("imagens/Img2DicVolante100.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+#Inf{
+    display: flex;
+    margin: auto;
+    margin-top: 10vw;
+    padding-right: 15px;
+    width: 94vw;
+    /*height: 11vh;*/
+    border-radius: 2%;
+    border: 1px solid #1D2228;
+    
+    background-color: #ffffffDF;
+}
+#DicDic{
+    padding-left: 10px;
+    padding-top: 1vw;
+    text-align: justify;
+}
+
+/* Secção Centro */
+.Div1{
+    /* width: 300px; */
+    margin: auto;
+    margin-top: 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid red; */
+    
+}
+.Sinal{
+    display: grid;
+    height: 23vh;
+    width: 26vw;
+    align-content: space-between; 
+}
+.Div1 .BotMen:hover{
+    -webkit-transform: scale(1.5);
+}
+#AJ{
+    margin-left: 18vw;
+    margin-top: -3vh;
+}
+#RS{
+    margin-left: 13vw;
+}
+#TT{
+    margin-Top: -7vw;
+}
+.TextBotCent{
+    color: #dbe0e9;
+    text-shadow: 1px -1px 4px black;
+    border-radius: 5px;
+    
+}   
+
+.Sinal #Su{
+   align-self: flex-end;
+   
+}
+#Sinal2{
+    position: relative;
+    margin-right: 1vw;
+}
+
+/* Seviços */
+.Div3{
+    border: 1px solid #E8871E;
+    border-radius: 30px;
+    height: 30vh;
+    width: 90vw;
+    overflow-y: auto;
+    margin: 10vh auto auto auto;
+    background-color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;    
+}
+.abrevia{
+    position: absolute;
+    visibility: hidden;
+    left: 70%;
+    top: 64%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: auto; 
+    transition: opacity 0.9s;
+ 
+}
+.Crit:hover .abrevia{
+    visibility: visible;
+    opacity: 80%;
+    
+}
+.Div3 > Div ol{
+    list-style: none;
+    padding: 5px;
+}
+.linhaTitle {
+    border-bottom:1px solid #dcdcdc;
+    height: 4vh;
+    background-color: #b0c4e6;
+    font-weight: bold;
+    padding-left: 10px;
+}
+.linhaserv{
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    align-items: center;
+    height: 7vh;
+    border-bottom:1px solid #dcdcdc;
+    padding-right: 4vw;
+    
+}
+.ConfServ{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+}
+input[type="checkbox"] { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 27px; /* Tamanho padrão do checkbox */
+    height: 27px; /* Tamanho padrão do checkbox */
+    border: 2px solid #33333358; /* Cor da borda do checkbox */
+    border-radius: 4px; /* Borda arredondada */
+    outline: #5073b3;
+}
+input[type="checkbox"]:checked {
+    background-color: #4CAF50; /* Cor de fundo quando marcado */
+    border-color: #4CAF50; /* Cor da borda quando marcado */
+}
+.ServMoti{
+    width: 50vw;
+    align-items: center;
+}
+.Serv{
+    font-weight: bolder;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tooltip Responsivo</title>
+    <style>
+        /* Estilo base para a dica de ferramenta */
+        .tooltip {
+            position: relative;
+            display: inline-block;
+        }
+
+        /* Estilo do texto abreviado */
+        .tooltip-text {
+            visibility: hidden;
+            width: 120px;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 5px;
+            border-radius: 5px;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%; /* Posiciona a dica de ferramenta acima do texto abreviado */
+            left: 50%;
+            margin-left: -60px; /* Centraliza a dica de ferramenta em relação ao texto abreviado */
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        /* Exibe a dica de ferramenta ao passar o mouse sobre o texto abreviado */
+        .tooltip:hover .tooltip-text {
+            visibility: visible;
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+<br></br><br>
+    <p>Passe o mouse sobre a <span class="tooltip"><abbr title="Hypertext Markup Language">HTML</abbr>
+        <span class="tooltip-text">Hypertext Markup Language</span></span> para ver a dica.</p>
+
+</body>
+</html>

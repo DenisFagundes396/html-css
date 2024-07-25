@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+/* Menu */
+.emenda{display:inline-block; padding-left:0.5vh;text-decoration: underline;}
+th.TT {width: 100%;text-align: left;}
+td.TT {justify-content: center;}
+.menu{border: 1px solid black;border-radius: 50px; }
+/* Status */
+img.car{display:block; margin:auto;margin-top:5vh;} 
+.Device{display:block; margin-top:5vh;margin:auto;max-width:100%} 
+table{margin-left: auto; margin-right: auto;} 
+button{font-size:1.5vh;border-radius:7px;width: 10vh;}
+/* tabelas pop up*/
+table.tabSt{border: 1px solid black;}
+
+ /* Estilize o pop-up como desejar */
+ #popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+            z-index: 999;
+        }
+
+        #overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 998;
+        }
